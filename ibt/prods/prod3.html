@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Name - Online Bike Store</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <script type="text/javascript" src="bike.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="#">Bikes</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="product-details">
+      <h1>City Bike BMW</h1>
+      <p>Brand new BMW bike, only 10000km, oil leak.</p>
+      <img src="../img/bike3.jpg" alt="Product Image">
+      <h2>10000km, 350hp, blue/red/white, gas, 6speed manual</h2>
+      <p3>The advanced RR engine is equipped with BMW ShiftCam Technology for varying the valve timing and the valve stroke on the intake side. This is a three-part intake shift camshaft that has two cams mounted on a shift segment for each valve to be actuated: a torque cam and a power cam, each with optimally designed cam geometry. The shift speed of the BMW ShiftCam of the new RR is 9,000 rpm, same as before.
+
+By means of an axial displacement of the cam segment, the inlet valves are shifted from either the torque cam or the power cam in just 10 milliseconds, depending on the load and speed. The axial displacement of the cam segment and thus the use of torque or power cam is affected via two shift cams on the cam segment and two electromechanical actuators. The different design of the cam geometry is used to vary the timing and the valve lift. While the full-load cam provides maximum valve lift, the partial-load cam delivers reduced valve lift.
+
+The benefits of BMW ShiftCam Technology include:
+
+Increased torque in the low and medium speed range while preserving peak output.
+
+Optimum design of partial-load cam geometry for the low to medium load and engine speed range.
+
+Reduced load change loss in the partial load range.
+
+Reduced exhaust emissions and optimized sound.</p3>
+      <h2>Price: $50000</h2>
+
+      <h2>Add a Review </h2>
+      <form id="review-form" onsubmit="addItem(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="review">Review:</label>
+        <textarea id="review" name="review" rows="5" required></textarea>
+
+        <input type="submit" value="Submit Review" class="btn">
+      </form>
+      
+      <h2>Buy Now</h2>
+      <form id="purchase-form" onsubmit="handleSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="pname" name="name" required>
+
+        <label for="address">Shipping Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <input type="submit" value="Buy Now" class="btn">
+      </form>
+
+      <h2>Customer Reviews</h2>
+      <ul id="reviews-list">
+        
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Online Bike Store. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

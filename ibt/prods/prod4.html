@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Name - Online Bike Store</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <script type="text/javascript" src="bike.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="#">Bikes</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="product-details">
+      <h1>City Bike Yamaha</h1>
+      <p>254hp yamaha, perfect for long roads.</p>
+      <img src="../img/bike4.jpg" alt="Product Image">
+      <h2>40000km, 150hp, yellow, gas, 4speed manual</h2>
+      <p3>With its Yamaha Chip Controlled Throttle (YCC-T) ride-by-wire system, the new R6 has D-Mode engine response modes, multi-mode traction control and is available with an accessory quickshifter. Its liquid-cooled, 599cc in-line four-cylinder engine has DOHC with four titanium valves per cylinder, a 13.1:1 compression ratio and forged pistons. Liner-less, direct-plated, ceramic-composite cylinder bores improve heat dissipation and reduce friction, while magnesium engine covers minimize weight. The 6-speed transmission has stacked input and output shafts to save space and centralize mass, and it’s mated to a racing-derived slipper clutch. A midmount titanium exhaust further centralizes mass and saves weight.</p3>
+      <h2>Price: $40000</h2>
+
+      <h2>Add a Review </h2>
+      <form id="review-form" onsubmit="addItem(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="review">Review:</label>
+        <textarea id="review" name="review" rows="5" required></textarea>
+
+        <input type="submit" value="Submit Review" class="btn">
+      </form>
+
+      <h2>Buy Now</h2>
+      <form id="purchase-form" onsubmit="handleSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="pname" name="name" required>
+
+        <label for="address">Shipping Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <input type="submit" value="Buy Now" class="btn">
+      </form>
+
+      <h2>Customer Reviews</h2>
+      <ul id="reviews-list">
+        
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Online Bike Store. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Name - Online Bike Store</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <script type="text/javascript" src="bike.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="#">Bikes</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="product-details">
+      <h1>Mountain Bike Kawazaki</h1>
+      <p>Used Kawazaki 40000km, great condition.</p>
+      <img src="../img/bike2.jpg" alt="Product Image">
+      <h2>40000km, 150hp, yellow, gas, 4speed manual</h2>
+      <p3>Based on a compact and responsive 296cc twin-cylinder engine, the Kawasaki Versys®-X 300 is a nimble-handling lightweight motorcycle that's ready to take on any size adventure. Whether you're commuting or touring, the Versys-X 300 is a willing companion. With a lightweight chassis and long-travel suspension, the possibilities are endless.</p3>
+      <h2>Price: $15000</h2>
+
+      <h2>Add a Review </h2>
+      <form id="review-form" onsubmit="addItem(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="review">Review:</label>
+        <textarea id="review" name="review" rows="5" required></textarea>
+
+        <input type="submit" value="Submit Review" class="btn">
+      </form>
+      
+      <h2>Buy Now</h2>
+      <form id="purchase-form" onsubmit="handleSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="pname" name="name" required>
+
+        <label for="address">Shipping Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <input type="submit" value="Buy Now" class="btn">
+      </form>
+
+      <h2>Customer Reviews</h2>
+      <ul id="reviews-list">
+        
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Online Bike Store. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
+
+
